@@ -27590,6 +27590,14 @@ PrefabInstance:
       propertyPath: videoPlayer
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8257968781468540194, guid: 9ed884b8913343b4580c62909fba8b7a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 8257968781468540194, guid: 9ed884b8913343b4580c62909fba8b7a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.11
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5254210071549563016, guid: 9ed884b8913343b4580c62909fba8b7a, type: 3}
     m_RemovedGameObjects: []
