@@ -12,4 +12,12 @@ public class TriggerVideo : MonoBehaviour
             other.GetComponent<ChangeVideoOnTrigger>().ChangeVideo(video);
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<ChangeVideoOnTrigger>().ChangeVideo(video);
+        }
+    }
 }
