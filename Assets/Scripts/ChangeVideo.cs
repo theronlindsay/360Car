@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -11,7 +12,19 @@ public class ChangeVideoOnTrigger : MonoBehaviour
     public VideoPlayer videoPlayer; // Reference to the VideoPlayer component
     [SerializeField] public List<VideoClip> availableClips; // Reference to the new video clip   
 
-    void ChangeVideo(VideoClip newVideoClip) // Change the video clip of the VideoPlayer component
+    private void Start()
+    {
+        ChangeVideo(0);
+        StartCoroutine(playVideo2());
+    }
+
+    IEnumerator playVideo2()
+    {
+        yield return new WaitForSeconds(7);
+        ChangeVideo(1);
+    }
+
+    public void ChangeVideo(VideoClip newVideoClip) // Change the video clip of the VideoPlayer component
     {
         if (!newVideoClip.Equals(null))
         {
