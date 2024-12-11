@@ -9,21 +9,6 @@ public class ChangeVideoOnTrigger : MonoBehaviour
 {
     public VideoPlayer videoPlayer; // Reference to the VideoPlayer component
     public VideoClip newVideoClip; // Reference to the new video clip   
-
-    //public InputActionReference triggerAction; // Reference to the trigger action   
-    
-    // void Update()
-    // {
-    //     if (triggerAction != null && videoPlayer != null)
-    //     {
-    //         // Check if the trigger button is pressed
-    //         if (triggerAction.action.triggered)
-    //         {
-    //             ChangeVideo();
-    //         }
-    //     }
-    // }
-
     void ChangeVideo(VideoClip newVideoClip) // Change the video clip of the VideoPlayer component
     {
         if (!newVideoClip.Equals(null))
