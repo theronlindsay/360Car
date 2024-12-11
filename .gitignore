@@ -76,6 +76,3 @@ crashlytics-build.properties
 
 #Unessesary macOS files
 .DS_Store
-
-# TestVideos Folder
-/[Aa]ssets/[Tt]est[Vv]ideos/
