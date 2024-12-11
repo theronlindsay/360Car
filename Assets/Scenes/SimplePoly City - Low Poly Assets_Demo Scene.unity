@@ -43265,6 +43265,7 @@ GameObject:
   - component: {fileID: 1361403841}
   - component: {fileID: 1361403843}
   - component: {fileID: 1361403842}
+  - component: {fileID: 1361403844}
   m_Layer: 0
   m_Name: EndStart
   m_TagString: Untagged
@@ -43321,6 +43322,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 15, y: 20, z: 150}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1361403844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361403840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd79d726a2e99e0489eff7d02a4e0546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1361862030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85868,6 +85881,7 @@ GameObject:
   - component: {fileID: 7525073506599711557}
   - component: {fileID: 1368472896866637812}
   - component: {fileID: 7545130640880856918}
+  - component: {fileID: 7545130640880856919}
   m_Layer: 6
   m_Name: FlippedSphere 1
   m_TagString: Player
@@ -85911,6 +85925,18 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &7545130640880856919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7545130640880856917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9123934c69d8da4b96b6e87e4b3d9b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &7549209134854647433
 MeshRenderer:
   m_ObjectHideFlags: 0

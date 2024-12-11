@@ -7,7 +7,7 @@ public class CrashScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.forward * Time.deltaTime);
+        if (activate) transform.Translate(Vector3.forward * Time.deltaTime);
     }
 
     public void Activate()
