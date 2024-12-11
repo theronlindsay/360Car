@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Video;
@@ -8,7 +9,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class ChangeVideoOnTrigger : MonoBehaviour
 {
     public VideoPlayer videoPlayer; // Reference to the VideoPlayer component
-    public VideoClip newVideoClip; // Reference to the new video clip   
+    [SerializeField] public List<VideoClip> availableClips; // Reference to the new video clip   
+
     void ChangeVideo(VideoClip newVideoClip) // Change the video clip of the VideoPlayer component
     {
         if (!newVideoClip.Equals(null))
@@ -21,5 +23,10 @@ public class ChangeVideoOnTrigger : MonoBehaviour
         {
             Debug.LogWarning("New video URL is empty or null.");
         }
+    }
+
+    void ChangeVideo(int clipNumber)
+    {
+        ChangeVideo(availableClips[clipNumber]);
     }
 }
