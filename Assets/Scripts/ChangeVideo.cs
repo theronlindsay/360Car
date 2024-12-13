@@ -23,7 +23,7 @@ public class ChangeVideoOnTrigger : MonoBehaviour
 
     IEnumerator playMedia2()
     {
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(8);
         ChangeMedia(availableClips[1], availableAudioClips[1]);
     }
 
