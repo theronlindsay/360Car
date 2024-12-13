@@ -97671,9 +97671,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 7545130640880856921}
   availableClips:
-  - {fileID: 32900000, guid: 298176e50f0dd6947bb2970abc302485, type: 3}
-  - {fileID: 32900000, guid: 4362a4ca280f2b9449afc6ec0e8b9249, type: 3}
-  - {fileID: 32900000, guid: 1fc04f22fbc4e4d4b805820462d6ba31, type: 3}
+  - {fileID: 32900000, guid: 9146f68021e346b418af094cd0b66974, type: 3}
+  - {fileID: 32900000, guid: 7687715821db7f642b958b71c713bb6b, type: 3}
+  - {fileID: 32900000, guid: ee2f91e36e6b0e849bc6b1b93f642608, type: 3}
 --- !u!328 &7545130640880856921
 VideoPlayer:
   m_ObjectHideFlags: 0
