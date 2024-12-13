@@ -10,7 +10,7 @@ public class TriggerVideo : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            var mediaChanger = other.GetComponent<ChangeVideoOnTrigger>();
+            var mediaChanger = GameObject.Find("VideoSphere").GetComponent<ChangeVideoOnTrigger>();
             mediaChanger.ChangeMedia(video, audio);
         }
     }
@@ -19,7 +19,7 @@ public class TriggerVideo : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            var mediaChanger = collision.gameObject.GetComponent<ChangeVideoOnTrigger>();
+            var mediaChanger = GameObject.Find("VideoSphere").GetComponent<ChangeVideoOnTrigger>();
             mediaChanger.ChangeMedia(video, audio);
         }
     }
