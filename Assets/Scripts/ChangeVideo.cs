@@ -10,7 +10,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class ChangeVideoOnTrigger : MonoBehaviour
 {
     public VideoPlayer videoPlayer; // Reference to the VideoPlayer component
-    [SerializeField] public List<VideoClip> availableClips; // Reference to the new video clip   
+    [SerializeField] public List<VideoClip> availableClips; // Reference to the new video clip
+    private float idleTimer = 0;
 
     private void Start()
     {
@@ -29,12 +30,34 @@ public class ChangeVideoOnTrigger : MonoBehaviour
         if (!newVideoClip.Equals(null))
         {
             videoPlayer.clip = newVideoClip;
+            videoPlayer.isLooping = false;
             videoPlayer.Play();
             Debug.Log("Video changed and playing new video: "  + newVideoClip);
         }
         else
         {
             Debug.LogWarning("New video URL is empty or null.");
+        }
+    }
+
+    private void Update()
+    {
+        if (!videoPlayer.isPlaying)
+        {
+            idleTimer += Time.deltaTime;
+        }
+        else
+        {
+            idleTimer = 0;
+        }
+
+        // Switch to Idle if no video is playing, but wait for a moment first in case another video is going to play soon
+        if (!videoPlayer.isPlaying && idleTimer > 0.5f) 
+        {
+            videoPlayer.clip = availableClips[2];
+            videoPlayer.isLooping = true;
+            videoPlayer.Play();
+            Debug.Log("No video playing, switching to Idle");
         }
     }
 
