@@ -1,36 +1,52 @@
 using Unity.VRTemplate;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Video;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class Steering : MonoBehaviour
 {
 
-    public GameObject wheel;
     public GameObject player;
-    public GameObject sphere;
+    public GameObject car;
 
     public Vector3 wheelOffset;  
 
     public float yRotation;
+
+    public InputActionReference accelerate;
+    public InputActionReference brake;
+    public InputActionReference steering;
 
 
     // Wheel position changed
     public void Update()
     {
 
-        yRotation = wheel.GetComponent<UnityEngine.XR.Content.Interaction.XRKnob>().value * 360;  
-        Debug.Log(yRotation);
-        ///Change only the y rotation, keep the x and z rotation the same
-        player.transform.rotation = Quaternion.Euler(player.transform.rotation.eulerAngles.x, yRotation, player.transform.rotation.eulerAngles.z);
-        sphere.transform.rotation = Quaternion.Euler(sphere.transform.rotation.eulerAngles.x, yRotation, sphere.transform.rotation.eulerAngles.z);
+            if(accelerate.action.ReadValue<float>() > 0)
+            {
+                car.GetComponent<Rigidbody>().AddForce(car.transform.forward * 100 * accelerate.action.ReadValue<float>());
+            }
+            
+            if(brake.action.ReadValue<float>() > 0)
+            {
+                car.GetComponent<Rigidbody>().AddForce(-car.transform.forward * 100 * brake.action.ReadValue<float>());
+                
+            }
 
-        // Set the XR Rig position to be the same as the wheel, -1 on the z axis
-        Vector3 newPosition = wheel.transform.position;
-        newPosition += wheelOffset;
-        player.transform.position = newPosition;
+        //set the player position to the cars position + the wheel offset
+        player.transform.position = car.transform.position + wheelOffset;
+
+        //Set rotation of the car to the steering value
+        yRotation = steering.action.ReadValue<Vector2>().x;
+        car.transform.Rotate(0, yRotation, 0);
+        //player.transform.Rotate(0, yRotation, 0);
+
+
+
         
     }
+
 
     
 }
