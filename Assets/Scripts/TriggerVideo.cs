@@ -4,12 +4,14 @@ using UnityEngine.Video;
 public class TriggerVideo : MonoBehaviour
 {
     [SerializeField] private VideoClip video;
+    [SerializeField] private AudioClip audio;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<ChangeVideoOnTrigger>().ChangeVideo(video);
+            var mediaChanger = other.GetComponent<ChangeVideoOnTrigger>();
+            mediaChanger.ChangeMedia(video, audio);
         }
     }
 
@@ -17,7 +19,8 @@ public class TriggerVideo : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<ChangeVideoOnTrigger>().ChangeVideo(video);
+            var mediaChanger = collision.gameObject.GetComponent<ChangeVideoOnTrigger>();
+            mediaChanger.ChangeMedia(video, audio);
         }
     }
 }

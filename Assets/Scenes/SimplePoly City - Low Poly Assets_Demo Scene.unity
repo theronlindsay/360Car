@@ -517,6 +517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 32900000, guid: ae67d2d1ca384a845bb6ab62fed6e813, type: 3}
+  audio: {fileID: 0}
 --- !u!65 &13664999
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3171,6 +3172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 32900000, guid: e92c3849b66748a438a7d3e06eea642f, type: 3}
+  audio: {fileID: 0}
 --- !u!65 &107048990
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5697,6 +5699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 32900000, guid: 9a942fb9ab19895468e8c882250a14f9, type: 3}
+  audio: {fileID: 0}
 --- !u!65 &172403281
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7130,6 +7133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 32900000, guid: e9ae5e7836a3b5149ac9e0d8da1f9d47, type: 3}
+  audio: {fileID: 0}
 --- !u!65 &235261643
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7369,6 +7373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 32900000, guid: 8403567b142ad314aafe0fd4f4d7c2f2, type: 3}
+  audio: {fileID: 0}
 --- !u!65 &246977012
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18905,6 +18910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 32900000, guid: a2d6669e14c3b334fad29bd96fc80d1d, type: 3}
+  audio: {fileID: 0}
 --- !u!65 &605518140
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24453,6 +24459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 32900000, guid: f3649461b8f1d5a418e3866ac5cdd8e6, type: 3}
+  audio: {fileID: 0}
 --- !u!1 &767934051
 GameObject:
   m_ObjectHideFlags: 0
@@ -26603,6 +26610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 32900000, guid: 8403567b142ad314aafe0fd4f4d7c2f2, type: 3}
+  audio: {fileID: 0}
 --- !u!65 &841054080
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38104,6 +38112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 32900000, guid: a2d6669e14c3b334fad29bd96fc80d1d, type: 3}
+  audio: {fileID: 0}
 --- !u!65 &1159002632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39138,6 +39147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 32900000, guid: a4aa2c8d329c55540b423bf8ec626cbf, type: 3}
+  audio: {fileID: 0}
 --- !u!65 &1186034536
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40781,6 +40791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 32900000, guid: f3649461b8f1d5a418e3866ac5cdd8e6, type: 3}
+  audio: {fileID: 0}
 --- !u!1001 &1224227557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43066,6 +43077,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 32900000, guid: a2d6669e14c3b334fad29bd96fc80d1d, type: 3}
+  audio: {fileID: 0}
 --- !u!65 &1268937134
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46806,6 +46818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 32900000, guid: 6e95c8bd31531c341b248fbac401291d, type: 3}
+  audio: {fileID: 0}
 --- !u!65 &1361403843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52929,6 +52942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 32900000, guid: f3649461b8f1d5a418e3866ac5cdd8e6, type: 3}
+  audio: {fileID: 0}
 --- !u!1001 &1483280227
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61333,6 +61347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 32900000, guid: f3649461b8f1d5a418e3866ac5cdd8e6, type: 3}
+  audio: {fileID: 0}
 --- !u!1001 &1692927188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67278,6 +67293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 32900000, guid: f47dfae115a07a04f9b254ad8b4cf692, type: 3}
+  audio: {fileID: 0}
 --- !u!65 &1811442847
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67692,6 +67708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 32900000, guid: 5ad44589756cf3045a8b5fd9fd67710d, type: 3}
+  audio: {fileID: 0}
 --- !u!65 &1819019520
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70636,6 +70653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 32900000, guid: a2d6669e14c3b334fad29bd96fc80d1d, type: 3}
+  audio: {fileID: 0}
 --- !u!65 &1893120409
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -80937,6 +80955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 32900000, guid: 3147f862965973141a0fa6a5d4a24dcb, type: 3}
+  audio: {fileID: 0}
 --- !u!65 &2101470283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -97638,6 +97657,7 @@ GameObject:
   - component: {fileID: 7545130640880856919}
   - component: {fileID: 7545130640880856921}
   - component: {fileID: 7545130640880856920}
+  - component: {fileID: 7545130640880856922}
   m_Layer: 0
   m_Name: VideoSphere
   m_TagString: Player
@@ -97670,10 +97690,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 7545130640880856921}
+  audioSource: {fileID: 7545130640880856922}
   availableClips:
   - {fileID: 32900000, guid: 9146f68021e346b418af094cd0b66974, type: 3}
   - {fileID: 32900000, guid: 7687715821db7f642b958b71c713bb6b, type: 3}
   - {fileID: 32900000, guid: ee2f91e36e6b0e849bc6b1b93f642608, type: 3}
+  availableAudioClips:
+  - {fileID: 8300000, guid: 052aa4bf14022b0469ff65a942ca2ae7, type: 3}
+  - {fileID: 8300000, guid: 00a4d8815b898974eb5377e4142fb29d, type: 3}
+  - {fileID: 8300000, guid: fe2fc94dcd086624598841ba533cb3a1, type: 3}
 --- !u!328 &7545130640880856921
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -97704,12 +97729,109 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!82 &7545130640880856922
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7545130640880856917}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &7594216512300614312
 MonoBehaviour:
   m_ObjectHideFlags: 0

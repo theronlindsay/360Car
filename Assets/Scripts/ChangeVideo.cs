@@ -10,35 +10,42 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class ChangeVideoOnTrigger : MonoBehaviour
 {
     public VideoPlayer videoPlayer; // Reference to the VideoPlayer component
+    public AudioSource audioSource;
     [SerializeField] public List<VideoClip> availableClips; // Reference to the new video clip
+    [SerializeField] public List<AudioClip> availableAudioClips;
     private float idleTimer = 0;
 
     private void Start()
     {
-        ChangeVideo(0);
-        StartCoroutine(playVideo2());
+        ChangeMedia(availableClips[0], availableAudioClips[0]);
+        StartCoroutine(playMedia2());
     }
 
-    IEnumerator playVideo2()
+    IEnumerator playMedia2()
     {
         yield return new WaitForSeconds(7);
-        ChangeVideo(1);
+        ChangeMedia(availableClips[1], availableAudioClips[1]);
     }
 
-    public void ChangeVideo(VideoClip newVideoClip) // Change the video clip of the VideoPlayer component
+    public void ChangeMedia(VideoClip newVideoClip, AudioClip newAudioClip)
     {
-        if (!newVideoClip.Equals(null))
+        if (newVideoClip != null)
         {
             videoPlayer.clip = newVideoClip;
             videoPlayer.isLooping = false;
             videoPlayer.Play();
-            Debug.Log("Video changed and playing new video: "  + newVideoClip);
         }
-        else
+
+        if (newAudioClip != null)
         {
-            Debug.LogWarning("New video URL is empty or null.");
+            audioSource.clip = newAudioClip;
+            audioSource.loop = false;
+            audioSource.Play();
         }
+
+        Debug.Log("Media changed to video: " + newVideoClip + " and audio: " + newAudioClip);
     }
+
 
     private void Update()
     {
@@ -52,17 +59,14 @@ public class ChangeVideoOnTrigger : MonoBehaviour
         }
 
         // Switch to Idle if no video is playing, but wait for a moment first in case another video is going to play soon
-        if (!videoPlayer.isPlaying && idleTimer > 0.5f) 
+        if (!videoPlayer.isPlaying && idleTimer > 0.5f)
         {
             videoPlayer.clip = availableClips[2];
             videoPlayer.isLooping = true;
             videoPlayer.Play();
-            Debug.Log("No video playing, switching to Idle");
+
+            audioSource.clip = null;
         }
     }
-
-    void ChangeVideo(int clipNumber)
-    {
-        ChangeVideo(availableClips[clipNumber]);
-    }
 }
+
